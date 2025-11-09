@@ -3,7 +3,8 @@
 
 
 # ForceSleep-Sleep-Warning
-For users that just can't figure out what is keeping your PC awake or would just like to have a sleep warning system. 
+This feature will simulate the regular sleeping timer system, while also providing a Sleep Warning display allowing you time to cancel it.  
+Also helpful if your PC just refuses to sleep and you can't figure out the cause of it.
 
 
 ---
