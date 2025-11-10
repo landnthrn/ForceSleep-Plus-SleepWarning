@@ -39,7 +39,7 @@ so say it was Elephant it would be `C:\Users\Elephant\Documents\Scripts`
 
 - Open **Command Prompt** as **Administrator**
 
-- Edit the following command before running it. Replace `%USERNAME%` with your PC username *(there are two to replace)*
+- Edit the following command before running it. Replace `%USERNAME%` with your PC username *(Without the %'s)* *(there are two to replace)*
 
 **THE COMMAND:**  
 ```schtasks /create /tn "ForceSleep_Watcher" /tr "powershell.exe -NoProfile -NoLogo -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Users\%USERNAME%\Documents\Scripts\ForceSleep\forcesleep.ps1"" /sc ONLOGON /ru "%USERNAME%" /it /rl LIMITED```
