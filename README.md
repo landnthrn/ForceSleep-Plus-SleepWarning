@@ -14,7 +14,7 @@ You can toggle the feature on/off with simple commands in any command prompt win
 `forcesleep off`    — Disable idle sleep  (Helpful for long downloads 
 `forcesleep status` — Check if enabled/disabled  
 
-You can cancel the sleep from happening by pressing `Ctrl + C` during the sleep warning 
+You can cancel the sleep from happening by pressing `Ctrl + C` during the sleep warning  
 or pause it by clicking inside the terminal pop-up and resume it by pressing any key.
 
 If you have media/audio playing, it will pause all audio before sleep triggers
