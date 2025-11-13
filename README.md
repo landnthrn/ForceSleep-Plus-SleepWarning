@@ -2,7 +2,7 @@
 <img width="417" height="263" alt="seelen-ui_Yea6HDYXRe" src="https://github.com/user-attachments/assets/ff28c26e-6660-4c87-9f4d-7a9250c07e58" />
 
 # BETTER PC SLEEP + SLEEP WARNING
-This feature simulates the regular sleeping system and adds more convenience to it.
+This feature simulates the regular sleeping system and adds more convenience to it.  
 Comes with a mini UI in command prompt.
 
 ---
