@@ -9,13 +9,16 @@ Comes with a mini UI in command prompt.
 ---
 
 ## MAIN USES:
-— **Ease of access & speed with changing specifics to your sleeping setup, useful for certain tasks**
+— **Ease of access & speed with changing specifics to your sleeping setup, useful for various tasks**
 
-— **Got a task that requires your PC to stay awake for long periods of time?** Set a sleep timer, or disable sleep in seconds with the cmd UI
+— **Got a task that requires your PC to stay awake for long periods of time?**  
+    Set a sleep timer, or disable sleep in seconds with the cmd UI
 
-— **Want you're PC to sleep after a download/upload is expected to finish?** Set a sleep timer for it
+— **Want you're PC to sleep after a download/upload is expected to finish?**  
+    Set a sleep timer for it
 
-— **You're PC refuses to sleep and you just can't figure out the cause of it?** This will simulate the default sleeping system for you
+— **You're PC refuses to sleep and you just can't figure out the cause of it?**  
+    This will simulate the default sleeping system for you
 
 ---
 
