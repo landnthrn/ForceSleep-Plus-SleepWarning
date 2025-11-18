@@ -1,7 +1,7 @@
 ﻿# Sleep Watcher (forcesleep.ps1) - Idle Monitor
 # Monitors keyboard/mouse idle time and applies the configured idle sleep timeout
 
-$ThresholdMinutes = 1
+$ThresholdMinutes = 25
 
 # Script directory
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -191,6 +191,7 @@ while ($true) {
         Start-Sleep -Seconds 5
     }
 }
+
 
 
 
