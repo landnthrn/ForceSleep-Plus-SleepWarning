@@ -28,7 +28,7 @@ Comes with a mini UI in command prompt.
 `sleepoff` — Disable idle sleep  
 `sleepstatus` — Check if the watcher is enabled/disabled  
 `sleeptime` — Change the set idle time to trigger sleep  
-`sleeprestart` — Restart the sleep watcher task manually  
+`sleeprestart` — Restart the sleep watcher task
 
 You can cancel sleep by pressing `Ctrl + C` while the warning is visible,  
 or pause/resume the countdown by clicking the window and pressing any key.
