@@ -54,6 +54,15 @@ if /I "%COMMAND%"=="restart" (
     goto :end
 )
 
+if /I "%COMMAND%"=="monitor" (
+    powershell -ExecutionPolicy Bypass -File "%~dp0forcesleep_monitor.ps1"
+    set "EXITCODE=%ERRORLEVEL%"
+    timeout /t 1 /nobreak >nul
+    echo.
+    pause
+    goto :end
+)
+
 :help
 set "STATUS=ENABLED"
 if exist "%FLAG%" set "STATUS=DISABLED"
@@ -114,6 +123,7 @@ echo   sleepon        - Enable idle sleep
 echo   sleepoff       - Disable idle sleep
 echo   sleepstatus    - Check if enabled/disabled
 echo   sleeptime      - Change the set idle time
+echo   sleepmonitor   - Change monitor(s) sleep time
 echo   sleeprestart   - Restart the watcher task
 echo.
 set "EXITCODE=0"
@@ -175,8 +185,32 @@ if defined THRESHOLD (
     )
 )
 
+set "MONITOR_TIME="
+for /f "usebackq tokens=* delims=" %%A in (`
+    powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0get_monitor_time.ps1"` ) do (
+    set "MONITOR_TIME=%%A"
+    goto monitor_found
+)
+:monitor_found
+
+set "MONITOR_DISPLAY=Unknown"
+if defined MONITOR_TIME (
+    for /f "tokens=1 delims= " %%A in ("!MONITOR_TIME!") do set "MONITOR_TIME=%%A"
+    set /a monitor_minutes=!MONITOR_TIME! 2>nul
+    if !errorlevel! EQU 0 (
+        if !monitor_minutes! EQU 0 (
+            set "MONITOR_DISPLAY=Never"
+        ) else if !monitor_minutes! EQU 1 (
+            set "MONITOR_DISPLAY=1 minute"
+        ) else (
+            set "MONITOR_DISPLAY=!monitor_minutes! minutes"
+        )
+    )
+)
+
 echo.
 echo Status - !STATUS!
 echo Idle Timer - !IDLE_DISPLAY!
+echo Sleep Monitor Time - !MONITOR_DISPLAY!
 echo.
 exit /b 0

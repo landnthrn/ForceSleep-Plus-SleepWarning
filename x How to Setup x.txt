@@ -1,3 +1,4 @@
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 BETTER PC SLEEP + SLEEP WARNING
@@ -14,11 +15,12 @@ MAIN USES:
 — You're PC refuses to sleep and you just can't figure out the cause of it? This will simulate the default sleeping system for you
 
 CMD Sleep Commands:  
-sleep             — Display this list of commands  
+sleep            — Display this list of commands  
 sleepon          — Enable idle sleep  
 sleepoff         — Disable idle sleep (perfect for long downloads & so on)  
 sleepstatus      — Check if the watcher is enabled/disabled  
 sleeptime        — Change the set idle time to trigger sleep
+sleepmonitor     — Change monitor(s) sleep time
 sleeprestart     — Restart the sleep watcher task manually
 
 You can cancel sleep by pressing `Ctrl + C` while the warning is visible, 
@@ -106,6 +108,8 @@ TEST THAT IT WORKS:
 — Wait a full minute, don't touch your keyboard or mouse, once the sleep warning appears let it play out to confirm the PC sleeps
 
 — When your done testing, use `sleeptime` again to set your idle time however you'd like
+
+— Run `sleepmonitor` to set your monitor sleep time (Recommended to set 1 minute longer than your idle sleep time)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

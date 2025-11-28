@@ -7,7 +7,7 @@ if "%~1"=="" (
 )
 
 set "ARG=%~1"
-for %%C in (on off status time restart) do (
+for %%C in (on off status time monitor restart) do (
     if /I "%ARG%"=="%%C" (
         shift
         call "%~dp0forcesleep.cmd" %%C %*
