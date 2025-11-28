@@ -118,7 +118,8 @@ You can always turn it back on just like normal
 
 - When you're done testing, use `sleeptime` again to set your idle time however you'd like
 
-- Run `sleepmonitor` to set your monitor sleep time (Recommended to set 1 minute longer than your idle sleep time)
+- Run `sleepmonitor` to set your monitor sleep time
+  *(Recommended to set 1 minute longer than your idle sleep time)*
 
 ---
 
